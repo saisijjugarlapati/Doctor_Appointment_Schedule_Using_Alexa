@@ -1,0 +1,440 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "doctor appointment",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ScheduleIntent",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE",
+                            "samples": [
+                                "{date}"
+                            ]
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "samples": [
+                                "{time}"
+                            ]
+                        },
+                        {
+                            "name": "department",
+                            "type": "departmentlist",
+                            "samples": [
+                                "{department}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I want to schedule ",
+                        "schedule an appointment on {date}",
+                        "schedule an appointment on {date} at {time} ",
+                        "schedule appointment",
+                        "schedule an appointment",
+                        "schedule"
+                    ]
+                },
+                {
+                    "name": "UserIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{name}"
+                            ]
+                        },
+                        {
+                            "name": "age",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{age}"
+                            ]
+                        },
+                        {
+                            "name": "gender",
+                            "type": "genderName",
+                            "samples": [
+                                "{gender}"
+                            ]
+                        },
+                        {
+                            "name": "email",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{email}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "newuser",
+                        "new user"
+                    ]
+                },
+                {
+                    "name": "VerifyEmailIntent",
+                    "slots": [],
+                    "samples": [
+                        "verified"
+                    ]
+                },
+                {
+                    "name": "ConfirmationIntent",
+                    "slots": [
+                        {
+                            "name": "confirmation",
+                            "type": "confirmation"
+                        }
+                    ],
+                    "samples": [
+                        "{confirmation}"
+                    ]
+                },
+                {
+                    "name": "doctorSchedule",
+                    "slots": [
+                        {
+                            "name": "doctName",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "schedule an appointment with {doctName}"
+                    ]
+                },
+                {
+                    "name": "UserIDIntent",
+                    "slots": [
+                        {
+                            "name": "userID",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{userID}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "existinguser",
+                        "existing user"
+                    ]
+                },
+                {
+                    "name": "ForgotUserIDIntent",
+                    "slots": [
+                        {
+                            "name": "userEmail",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{userEmail}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What steps can I take if I can't remember my ID",
+                        "I lost my ID Can you assist me in finding it",
+                        "Help me retrieve my ID",
+                        "Is there a way to recover my ID",
+                        "What should I do if I don't remember my ID",
+                        "How do I find my ID",
+                        "I forgot my ID How can I retrieve it",
+                        "Can you remind me of my ID",
+                        "What is my ID",
+                        "how to know my id",
+                        "forgotten id",
+                        "forgotID",
+                        "i forgot my id",
+                        "forgot id"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "confirmation",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "yes",
+                                "synonyms": [
+                                    "confirm",
+                                    "agree",
+                                    "done",
+                                    "ok"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "departmentlist",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "mbbs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dentistry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cardiology"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "genderName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "female",
+                                "synonyms": [
+                                    "she",
+                                    "woman",
+                                    "girl",
+                                    "lady",
+                                    "f"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "male",
+                                "synonyms": [
+                                    "he",
+                                    "boy",
+                                    "gentleman",
+                                    "man",
+                                    "male",
+                                    "m"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "UserIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.808187439946.1441315273073"
+                            }
+                        },
+                        {
+                            "name": "age",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.808187439946.1578096675526"
+                            }
+                        },
+                        {
+                            "name": "gender",
+                            "type": "genderName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.808187439946.133098610920"
+                            }
+                        },
+                        {
+                            "name": "email",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.808187439946.411351550709"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ScheduleIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1465498809853.755766954175"
+                            }
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1465498809853.511408828894"
+                            }
+                        },
+                        {
+                            "name": "department",
+                            "type": "departmentlist",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1465498809853.1337118254906"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "UserIDIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "userID",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.434212534865.1151509973014"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ForgotUserIDIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "userEmail",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.623680233543.986127594004"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.808187439946.1441315273073",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter your name?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.808187439946.1578096675526",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter age?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.808187439946.133098610920",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter gender?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.808187439946.411351550709",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter email?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1465498809853.755766954175",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter date in the format YYYY-MM-DD?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1465498809853.511408828894",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter time?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1465498809853.1337118254906",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter department?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.434212534865.1151509973014",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter userID"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.623680233543.986127594004",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Enter your email"
+                    }
+                ]
+            }
+        ]
+    }
+}
