@@ -40,7 +40,7 @@ The Hospital Appointment Scheduler skill is powered by a sophisticated tech stac
    
 ## Work Flow
 
-![255631625-96c227b5-3b8c-444a-9814-60e46f088457](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/65902cf5-a9ca-45e0-ab4f-b7238ee6166d)
+![work flow](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/d4459745-225a-4ca4-9523-c64a5ef78f5e)
 ## Skill Features
 ### User Registration and Verification
 * New patients can easily register by providing essential information like name, age, gender, date of birth, father's name, and email.
