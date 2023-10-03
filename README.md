@@ -108,9 +108,9 @@ New patients can efficiently register and schedule appointments through the Hosp
 
 7.**Appointment Booking**: After selecting a suitable doctor and appointment slot, the patient can proceed to book the appointment. Alexa will confirm the booking and send a confirmation email to the patient.
 
-![1n](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/51e88fef-e84f-4665-a077-c613543c1234)
+![1n](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/62b4bd68-ba97-4401-9868-99b25580d177)
 
-![4_20230731_053157351](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/4488b97e-434d-4eef-879b-32f8a0dc6a41)
+![4_20230731_053157351](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/983e1673-61b4-4416-a9cb-08e9954dadde)
 
 ## Working with Existing Patients
 Existing patients can conveniently access their accounts and manage appointments through the Doctor Appointment Scheduler skill. Here's a step-by-step guide on how existing patients can use the skill:
@@ -125,12 +125,12 @@ Existing patients can conveniently access their accounts and manage appointments
 
 5.**Appointment Booking**: After selecting a suitable doctor and appointment slot, the patient can proceed to book the appointment. Alexa will confirm the booking and send a confirmation email to the patient.
 
-![e1](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/d669ee0d-57bc-44d0-a010-fc87e9eca534)
+![e1](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/fd41404d-c362-43b5-b5bb-3695e32f1f17)
 
 # If Patient forgets ID
 -->**Forgot Patient ID**: In case the patient forgets their patient ID, Alexa will offer an alternative way to verify their identity. The patient can say, "I forgot my ID," and Alexa will ask their email for verification.
 
-![f20230731_053223610](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/77ebcd35-91b2-4038-be88-b2fbc9dba2dc)
+![f20230731_053223610](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/5ea3277c-82a9-4bcf-a9e2-46ca404a66b7)
 
 # DynamoDB
 In our project we use two DynamoDB tables:
@@ -153,28 +153,28 @@ Purpose: This table is used to store the availability details of doctors for sch
 # Emails you get while working with the skill
 ## Verification Email
 
-![20230731_052320579](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/1ee45a0b-b784-4299-9897-32bdb2a0b8ea)
+![20230731_052320579](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/0f0b4e6a-095d-4982-8891-1f0190f53ac7)
 
 ## Confirmation page
 
-![c_20230731_052808309](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/d48d2cd1-616e-4ac1-9521-9708a524c09d)
+![c_20230731_052808309](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/16b9b29b-9848-4deb-ac04-cfae489dd507)
 
 ## Details Email
 
-![u_20230731_052929582](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/d4849be3-7063-4db4-9d1d-cb17bbd40a84)
+![u_20230731_052929582](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/68a39719-bb7a-4538-941c-b8eff4208a89)
 
 ## Appointment Scheduled Email 
 
-![a_20230731_052904732](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/66a94204-1e25-4f2a-b081-c352aa9d52cf)
+![a_20230731_052904732](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/69115339-78cc-4349-ae7b-4de793cb937b)
 
 ## Appointment Scheduling Process in Google Calendar
 -> The image below will provide the information or pictorial representation how the appointments of different patients are scheduled in calendar (Hospital Calendar)
 
-![doctorCalendar](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/05b6a308-0a8c-4845-912b-5642aeb8daea)
+![doctorCalendar](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/ebc3896c-3438-4c48-b732-07794a1bf97e)
 
 ->The image below will provide the representation how the doctor will be able to access the information of patient in his personal calendar or whole hospital calendar
 
-![detailsOfPatient](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/7994dded-998c-40fc-b613-7ea2fbe2bb10)
+![detailsOfPatient](https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa/assets/107229888/6f94aaed-69ac-4024-a6ae-b4bdf508b602)
 
 # Applications
 1.**Voice-Based Doctor Recommendations**: Implement a feature that allows Alexa to recommend doctors based on the patient's symptoms or medical conditions. Users can ask Alexa for suggestions, and the skill can provide a list of doctors specializing in relevant fields.
