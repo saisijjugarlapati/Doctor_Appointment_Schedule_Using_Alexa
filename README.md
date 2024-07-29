@@ -192,5 +192,5 @@ The Doctor Appointment Scheduler using Alexa skill was developed by :
 
 * [@saisijjugarlapati](https://github.com/saisijjugarlapati)
 * Repository : https://github.com/saisijjugarlapati/Doctor_Appointment_Schedule_Using_Alexa
-Feedback
+* Feedback :
 For any feedback or queries, please reach out to me at gssr2593@gmail.com
